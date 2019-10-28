@@ -16,7 +16,8 @@ public class CrossBrowserTest {
 	@BeforeTest
 	public void setUp(String browserName) {
 	
-		System.out.println("Browser is  " + browserName);
+		System.out.println("Browser is  " + browserName  + "\tThread Number " + Thread.currentThread().getId());
+	
 		
 		//check browser
 		if (browserName.equalsIgnoreCase("chrome")) {
