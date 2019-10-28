@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="My simple suite">
+<suite name="My simple suite" parallel="tests" thread-count="3"  >
   
-  <test name="loginTest">
+  <test name="FirefoxTest">
+  <parameter name="browserName" value="firefox"></parameter>
     <classes>
-      <class name="selenium.LoginTest"/>
+      <class name="selenium.CrossBrowserTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test>
   
-  <test name="sendtest">
+   <test name="ChromeTest">
+  <parameter name="browserName" value="chrome"></parameter>
     <classes>
-      <class name="selenium.SendMailTest"/>
+      <class name="selenium.CrossBrowserTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
   
-  <test name="logoutTest">
+   <test name="IETest">
+  <parameter name="browserName" value="ie"></parameter>
     <classes>
-       <class name="selenium.Validations"/>
+      <class name="selenium.CrossBrowserTest"/>
     </classes>
-  </test> <!-- Test -->
- 
+  </test>  
   
-</suite> <!-- Suite -->
+</suite> 

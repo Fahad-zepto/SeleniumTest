@@ -14,4 +14,21 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>drivers/IE/IEDriverServer.exe</name>
+			<type>1</type>
+			<location>E:/Learning/Selenium Webdriver/IEDriverServer.exe</location>
+		</link>
+		<link>
+			<name>drivers/chrome/chromedriver.exe</name>
+			<type>1</type>
+			<location>E:/Learning/Selenium Webdriver/chrome/chromedriver.exe</location>
+		</link>
+		<link>
+			<name>drivers/firefox/geckodriver.exe</name>
+			<type>1</type>
+			<location>E:/Learning/Selenium Webdriver/firefox/geckodriver.exe</location>
+		</link>
+	</linkedResources>
 </projectDescription>
